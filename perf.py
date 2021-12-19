@@ -2,7 +2,7 @@
 from perfetto.trace_processor import TraceProcessor
 
 def slice():
-        tp = TraceProcessor(file_path='trace.perfetto-trace')
+        tp = TraceProcessor(file_path='trace.proto')
 
         qr_it = tp.query('SELECT name FROM slice')
         for row in qr_it:
